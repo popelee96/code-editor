@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>CODE EDITOR</title>
+    <link rel="stylesheet" type="text/css" href="codeeditor.css"/>
+</head>
+<body>
+    <header>        
+        <h1>CODE EDITOR</h1>
+    </header>
+    <nav>
+        <a href=#>READ</a>
+        <a href=#>WRITE</a>
+    </nav>
+    <section>
+        <div id="codeview">
+            <h2>Running via <code>CodeFlask.run()</code></h2>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="codeeditor.js"></script>
+    <script>
+        // CodeFlask.run('codeview', 'javascript');
+
+        var flask = new CodeFlask;
+        flask.run('codeview', {language: 'javascript' });
+    </script>
+</body>
+</html>
